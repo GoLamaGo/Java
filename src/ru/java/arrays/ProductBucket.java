@@ -1,3 +1,5 @@
+//Task 2.1.1
+
 package ru.java.arrays;
 
 import java.util.Scanner;
@@ -60,7 +62,7 @@ public class ProductBucket {
             overalPrice += evaluateCost[i] * PRICES[i];
         }
 
-        System.out.printf("Итоговая сумма: %40d",overalPrice);
+        System.out.printf("Итоговая сумма: %39d",overalPrice);
 
     }
 }
