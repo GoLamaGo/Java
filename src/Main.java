@@ -11,11 +11,11 @@ public class Main {
 //        ProductBucket replacing = new ProductBucket();
 //        ProductBucket.createProductBucket();
 
+
         /*Java4.5.1*/
         Wish.printTypeOfSort();
         System.out.println();
 
-//        WishComparator wishComparator = new WishComparator();
         TreeSet<Wish> wishlistComparator = new TreeSet<>(new WishComparator());
 
 
