@@ -1,4 +1,4 @@
-package ru.java.collections;
+package ru.java.collections.treeset;
 
 import java.util.Comparator;
 

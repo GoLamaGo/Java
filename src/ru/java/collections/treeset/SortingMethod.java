@@ -1,4 +1,4 @@
-package ru.java.collections;
+package ru.java.collections.treeset;
 
 public enum SortingMethod {
     SortByPrice("1"),

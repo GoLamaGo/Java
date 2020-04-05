@@ -1,9 +1,8 @@
 //Task 4.5.1
 
-package ru.java.collections;
+package ru.java.collections.treeset;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Wish implements Comparable<Wish> {
     private String name;

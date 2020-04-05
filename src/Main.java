@@ -1,5 +1,5 @@
-import ru.java.collections.Wish;
-import ru.java.collections.WishComparator;
+import ru.java.collections.treeset.Wish;
+import ru.java.collections.treeset.WishComparator;
 
 import java.util.Comparator;
 import java.util.TreeSet;
