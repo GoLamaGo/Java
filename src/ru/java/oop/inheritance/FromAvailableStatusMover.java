@@ -4,7 +4,7 @@ public class FromAvailableStatusMover extends BookMover {
 
     @Override
     public void moveToStatus(Book book, Status requestedStatus) {
-//        super.moveToStatus(book, requestedStatus);
+        super.moveToStatus(book, requestedStatus);
         switch (requestedStatus) {
             case ARCHIVED:
                 book.setStatus(Status.ARCHIVED.toString());

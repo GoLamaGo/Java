@@ -16,7 +16,7 @@ public class FromBorrowedStatusMover extends BookMover {
                 book.setStatus(String.valueOf(Status.OVERDUED));
                 break;
             case AVAILABLE:
-                System.out.printf("Перевод книги из статуса %s в статус %s невозможен%n",book.getStatus(),requestedStatus);
+                book.setStatus(String.valueOf(Status.OVERDUED));
                 break;
         }
 

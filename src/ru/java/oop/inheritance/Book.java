@@ -9,6 +9,10 @@ public class Book {
         this.status = Status.AVAILABLE.toString();
     }
 
+    public void displayBookStatus(){
+        System.out.printf("Current status of the book \"%s\" is: " + (char)27 + "[31m%s%n%n" + (char)27 + "[0m",getTitle(),getStatus());
+    }
+
     public String getTitle() {
         return title;
     }

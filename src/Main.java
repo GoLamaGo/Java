@@ -1,8 +1,5 @@
 import ru.java.arrays.ProductBucket;
-import ru.java.oop.inheritance.Book;
-import ru.java.oop.inheritance.BookMover;
-import ru.java.oop.inheritance.FromAvailableStatusMover;
-import ru.java.oop.inheritance.Status;
+import ru.java.oop.inheritance.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,11 +10,20 @@ public class Main {
 
         /*Java3.2.1*/
         Book book = new Book("The Lord of the Rings");
-        System.out.printf("%s: %s%n",book.getTitle(),book.getStatus());
+        System.out.printf("%s: %s%n%n",book.getTitle(),book.getStatus());
 
         BookMover fromAvailableStatusMover = new FromAvailableStatusMover();
         fromAvailableStatusMover.moveToStatus(book,Status.BORROWED);
 
-        System.out.printf("Current status of the book \"%s\" is: " + (char)27 + "[31m%s%n",book.getTitle(),book.getStatus());
+        book.displayBookStatus();
+
+        BookMover fromBorrowedStatusMover = new FromBorrowedStatusMover();
+        fromBorrowedStatusMover.moveToStatus(book,Status.ARCHIVED);
+        book.displayBookStatus();
+
+        BookMover fromArchievedStatusMover = new FromArchievedStatusMover();
+        fromArchievedStatusMover.moveToStatus(book,Status.BORROWED);
+        book.displayBookStatus();
+
     }
 }
