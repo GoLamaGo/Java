@@ -2,11 +2,11 @@ package ru.java.oop.inheritance;
 
 public class Book {
     private String title;
-    private String status;
+    private Status status;
 
     public Book(String title) {
         this.title = title;
-        this.status = Status.AVAILABLE.toString();
+        this.status = Status.AVAILABLE;
     }
 
     public void displayBookStatus(){
@@ -17,7 +17,7 @@ public class Book {
         return title;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
@@ -25,7 +25,7 @@ public class Book {
         this.title = title;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 }
