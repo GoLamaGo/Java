@@ -1,5 +1,3 @@
-import ru.java.arrays.ProductBucket;
-import ru.java.oop.inheritance.*;
 import ru.java.oop.polymorphizm.Player;
 
 import java.util.InputMismatchException;
@@ -64,11 +62,15 @@ public class Main {
             if (slot == -1) {
                 break;
             } else {
-                player.shotWithWeapon(slot);
+                try {
+                    player.shotWithWeapon(slot);
+                } catch (IllegalArgumentException ie) {
+                    System.out.println("Incorrect number, please try again");
+                }
             }
         }
-
         System.out.println("Game over!");
+
 
     }
 }
