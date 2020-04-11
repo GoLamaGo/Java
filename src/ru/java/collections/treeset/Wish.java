@@ -21,7 +21,7 @@ public class Wish implements Comparable<Wish> {
 
     /*method from Comparable*/
     public int compareTo(Wish wish) {
-        return Double.compare(getPrice(),wish.getPrice());
+        return Double.compare(getPrice(), wish.getPrice());
     }
 
     public static void printTypeOfSort() {

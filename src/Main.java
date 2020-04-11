@@ -20,7 +20,6 @@ public class Main {
 
         TreeSet<Wish> wishlistComparator = new TreeSet<>(new WishComparator());
 
-
         wishlistComparator.add(new Wish("FlashCard", "128Gb for videos", 1500, "http://pleer.ru/flash128", 3));
         wishlistComparator.add(new Wish("Bicycle", "MTB 29'er", 100000, "http://bike24.de/ScottSparkRC2020", 5));
         wishlistComparator.add(new Wish("Shoes", "Sneakers NewBalance", 11000, "http://newbalance.ru/974", 3));
@@ -51,26 +50,29 @@ public class Main {
         }
 
         System.out.println();
-        //Java2.1.1
+
+
+        /*Java2.1.1*/
 //        ProductBucket replacing = new ProductBucket();
 //        ProductBucket.createProductBucket();
 
+
         /*Java3.2.1*/
-        Book book = new Book("The Lord of the Rings");
-        System.out.printf("%s: %s%n%n",book.getTitle(),book.getStatus());
-
-        BookMover fromAvailableStatusMover = new FromAvailableStatusMover();
-        fromAvailableStatusMover.moveToStatus(book,Status.BORROWED);
-
-        book.displayBookStatus();
-
-        BookMover fromBorrowedStatusMover = new FromBorrowedStatusMover();
-        fromBorrowedStatusMover.moveToStatus(book,Status.ARCHIVED);
-        book.displayBookStatus();
-
-        BookMover fromArchievedStatusMover = new FromArchievedStatusMover();
-        fromArchievedStatusMover.moveToStatus(book,Status.BORROWED);
-        book.displayBookStatus();
+//        Book book = new Book("The Lord of the Rings");
+//        System.out.printf("%s: %s%n%n",book.getTitle(),book.getStatus());
+//
+//        BookMover fromAvailableStatusMover = new FromAvailableStatusMover();
+//        fromAvailableStatusMover.moveToStatus(book,Status.BORROWED);
+//
+//        book.displayBookStatus();
+//
+//        BookMover fromBorrowedStatusMover = new FromBorrowedStatusMover();
+//        fromBorrowedStatusMover.moveToStatus(book,Status.ARCHIVED);
+//        book.displayBookStatus();
+//
+//        BookMover fromArchievedStatusMover = new FromArchievedStatusMover();
+//        fromArchievedStatusMover.moveToStatus(book,Status.BORROWED);
+//        book.displayBookStatus();
 
     }
 }
