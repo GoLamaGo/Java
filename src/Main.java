@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        //Java2.1.1
+        /*Java2.1.1*/
 //        ProductBucket replacing = new ProductBucket();
 //        ProductBucket.createProductBucket();
 
@@ -42,33 +42,36 @@ public class Main {
 
 
         //Java3.3.1
-        Scanner scanner = new Scanner(System.in);
-        Player player = new Player();
-        System.out.format("У игрока %d слотов с оружием,"
-                        + " введите номер, чтобы выстрелить,"
-                        + " -1 чтобы выйти%n",
-                player.getSlotsCount()
-        );
+//        Scanner scanner = new Scanner(System.in);
+//        Player player = new Player();
+//        System.out.format("У игрока %d слотов с оружием,"
+//                        + " введите номер, чтобы выстрелить,"
+//                        + " -1 чтобы выйти%n",
+//                player.getSlotsCount()
+//        );
+//
+//        int slot;
+//
+//        while (true) {
+//            try {
+//                slot = scanner.nextInt();
+//            } catch (InputMismatchException mis) {
+//                System.out.println("Incorrect number, please try again");
+//                scanner.next();
+//                continue;
+//            }
+//
+//            if (slot == -1) {
+//                break;
+//            } else {
+//                player.shotWithWeapon(slot);
+//            }
+//        }
+//
+//        System.out.println("Game over!");
 
-        int slot;
 
-        while (true) {
-            try {
-                slot = scanner.nextInt();
-            } catch (InputMismatchException mis) {
-                System.out.println("Incorrect number, please try again");
-                scanner.next();
-                continue;
-            }
-
-            if (slot == -1) {
-                break;
-            } else {
-                player.shotWithWeapon(slot);
-            }
-        }
-
-        System.out.println("Game over!");
+        /*Java3.4.1*/
 
     }
 }
